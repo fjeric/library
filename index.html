@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="css/fontawesome.min.css" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/8f8a12f40b.js" crossorigin="anonymous"></script>
+    <script src="scripts.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="bookForm">
+    <div>
+        <input type="text" id="title" placeholder="Title" required>
+    </div>
+
+    <div>
+        <input type="text" id="author" placeholder="Author" required>
+    </div>
+
+    <div>
+        <input type="number" id="pages" placeholder="Page Numbers" required>
+    </div>
+    
+    <div>
+        <label for="is-read">Have you read it?</label>
+        <input class="checkbox" type="checkbox" id="isRead">
+    </div>
+    <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <div class="table">
+        <table>
+            <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Status</th>
+            <th>Remove</th>
+            </tr>
+            <tbody id="tableInfo">
+
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
